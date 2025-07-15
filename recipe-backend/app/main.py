@@ -6,7 +6,7 @@ from app import logic
 
 app = FastAPI()
 
-# Add this middleware right after creating the app instance
+## Add this middleware right after creating the app instance
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],  # React dev server URLs
